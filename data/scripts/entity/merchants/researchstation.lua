@@ -8,7 +8,7 @@ local autoResearch_settingsReceived, autoResearch_systemTypeNames, autoResearch_
 local autoResearch_type = 0 -- client
 local AutoResearchConfig, AutoResearchLog, autoResearch_systemTypeScripts, autoResearch_playerLocks -- server
 local autoResearch_initialize, autoResearch_onClickResearch -- extended functions
-
+local designation = getDamageTypeName(weaknessType)
 if onClient() then
 
 
@@ -22,7 +22,7 @@ autoResearch_systemTypeNames = {
   "Energy to Shield Converter"%_t,
   "Engine Upgrade"%_t,
   "Quantum ${num}Hyperspace Upgrade"%_t % {num = "X "},
-  "RCN-00 Tractor Beam Upgrade MK ${mark}"%_t % {mark = "X "},
+  --"RCN-00 Tractor Beam Upgrade MK ${mark}"%_t % {mark = "X "},
   "Turret Control System M-TCS-${num}"%_t % {num = "X "},
   "Mining System"%_t,
   "Radar Upgrade"%_t,
@@ -34,10 +34,7 @@ autoResearch_systemTypeNames = {
   "C43 Object Detector"%_t,
   "Velocity Security Control Bypass"%_t,
   "Xsotan Technology Fragment"%_t,
-  "W-Energy-Hull Polarizer ${num}"%_t % {num = "X "},
-  "W-Plasma-Hull Polarizer ${num}"%_t % {num = "X "},
-  "W-Electric-Hull Polarizer ${num}"%_t % {num = "X "},
-  "W-Anti Matter-Hull Polarizer ${num}"%_t % {num = "X "},
+  "W-${designation}-Hull Polarizer"%_t % {designation = designation},
   "Shield Ionizer"%_t
   
 }
@@ -435,6 +432,7 @@ autoResearch_systemTypeScripts = {
   "militarytcs",
   "miningsystem",
   "radarbooster",
+  "resistancesystem",
   "scannerbooster",
   "shieldbooster",
   "shieldimpenetrator",
@@ -442,6 +440,7 @@ autoResearch_systemTypeScripts = {
   "transportersoftware",
   "valuablesdetector",
   "velocitybypass",
+  "weaknesssystem",
   "wormholeopener"
 }
 autoResearch_playerLocks = {} -- save player index in order to prevent from starting 2 researches at the same time
