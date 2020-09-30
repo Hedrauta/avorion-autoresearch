@@ -17,12 +17,12 @@ autoResearch_systemTypeNames = {
   "Battery Upgrade"%_t,
   "T1M-LRD-Tech Cargo Upgrade MK ${mark}"%_t % {mark = "X "},
   "Turret Control System C-TCS-${num}"%_t % {num = "X "},
-  "Defense Weapons System DWS-${num}"%_t % {num = "X "},
+  "Internal Defense Weapons System IDWS-${num}"%_t % {num = "X "}, 
   "Generator Upgrade"%_t,
   "Energy to Shield Converter"%_t,
   "Engine Upgrade"%_t,
   "Quantum ${num}Hyperspace Upgrade"%_t % {num = "X "},
-  --"RCN-00 Tractor Beam Upgrade MK ${mark}"%_t % {mark = "X "},
+  "RCN-00 Tractor Beam Upgrade MK ${mark}"%_t % {mark = "X "},
   "Turret Control System M-TCS-${num}"%_t % {num = "X "},
   "Mining System"%_t,
   "Radar Upgrade"%_t,
@@ -33,7 +33,13 @@ autoResearch_systemTypeNames = {
   "Transporter Software"%_t,
   "C43 Object Detector"%_t,
   "Velocity Security Control Bypass"%_t,
-  "Xsotan Technology Fragment"%_t
+  "Xsotan Technology Fragment"%_t,
+  "W-Energy-Hull Polarizer ${num}"%_t % {num = "X "},
+  "W-Plasma-Hull Polarizer ${num}"%_t % {num = "X "},
+  "W-Electric-Hull Polarizer ${num}"%_t % {num = "X "},
+  "W-Anti Matter-Hull Polarizer ${num}"%_t % {num = "X "},
+  "Shield Ionizer"%_t,
+  
 }
 autoResearch_systemTypeNameIndexes = {}
 
