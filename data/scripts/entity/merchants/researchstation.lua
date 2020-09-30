@@ -38,7 +38,7 @@ autoResearch_systemTypeNames = {
   "W-Plasma-Hull Polarizer ${num}"%_t % {num = "X "},
   "W-Electric-Hull Polarizer ${num}"%_t % {num = "X "},
   "W-Anti Matter-Hull Polarizer ${num}"%_t % {num = "X "},
-  "Shield Ionizer"%_t,
+  "Shield Ionizer"%_t
   
 }
 autoResearch_systemTypeNameIndexes = {}
