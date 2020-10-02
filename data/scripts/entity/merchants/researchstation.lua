@@ -17,7 +17,7 @@ autoResearch_systemTypeNames = {
   "Battery Upgrade"%_t,
   "T1M-LRD-Tech Cargo Upgrade MK ${mark}"%_t % {mark = "X "},
   "Turret Control System C-TCS-${num}"%_t % {num = "X "},
-  "Internal Defense Weapons System IDWS-"%_t %, 
+  "Internal Defense Weapons System IDWS-${num}"%_t % {num = "X "}, 
   "Generator Upgrade"%_t,
   "Energy to Shield Converter"%_t,
   "Engine Upgrade"%_t,
@@ -283,6 +283,7 @@ function ResearchStation.autoResearch_onStartAutoResearch()
                 local checkBox = autoResearch_typesCheckBoxes[i]
                 if checkBox.element.checked then
                     selectedTypes[autoResearch_systemTypeNameIndexes[checkBox.caption]] = true
+                    hasTypes = true
                 end
             end
         else
